@@ -1,6 +1,6 @@
 
 
-<footer class="text-center bg-light shadow-sm ">
+<footer class="text-center bg-light shadow-sm mt-3">
   <!-- Grid container -->
   <div class="container pt-4">
     <!-- Section: Social media -->

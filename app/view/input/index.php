@@ -11,7 +11,7 @@
             <textarea class="form-control" name="sinopsis" placeholder="Sinopsis" required></textarea>
             <p class="mt-2">Gambar</p>
             <input type="file" name="image" required>
-            <div class="container d-flex justify-content-center mt-4">
+            <div class="container d-flex justify-content-center mt-4 mb-3">
                 <input class="btn btn-primary mt-3" type="submit" value="Submit">
             </div>
         </form>
