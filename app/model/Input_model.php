@@ -16,10 +16,14 @@ class Input_model {
     public function tambahBuku($judul, $sinopsis, $image) {
     $sql = "INSERT INTO buku (judul, sinopsis, image) VALUES (:judul, :sinopsis, :image)";
     $stmt = $this->dbh->prepare($sql);
-    $stmt->bindParam(':judul', $judul);
-    $stmt->bindParam(':sinopsis', $sinopsis);
-    $stmt->bindParam(':image', $image);
     
+    return $stmt->execute(
+        [
+            ':judul'=>$judul,
+            ':sinopsis'=>$sinopsis,
+            ':image'=>$image
+        ]
+    );
 }
 
 }

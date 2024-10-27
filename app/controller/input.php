@@ -9,8 +9,7 @@ class Input extends Controller {
 
     public function store() {
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-            // Debug: Cek isi dari $_FILES
-            print_r($_FILES); // Tambahkan ini untuk melihat apa yang diterima
+            
     
             if (isset($_FILES['image']) && $_FILES['image']['error'] == 0) {
                 // Ambil data dari form
@@ -18,7 +17,7 @@ class Input extends Controller {
                 $sinopsis = $_POST['sinopsis'];
                 $image = $_FILES['image']['name'];
                 $tmp_name = $_FILES['image']['tmp_name'];
-                $folder = '../public/image/'; // Pastikan ada slash di akhir
+                $folder = '../public/image/';
     
                 // Cek apakah file sudah berhasil dipindahkan
                 if (move_uploaded_file($tmp_name, $folder . $image)) {
