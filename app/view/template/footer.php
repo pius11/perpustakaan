@@ -76,5 +76,21 @@
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="<?=BASEURL?>bootstrap.js"></script>
+
+
+<script>
+  // Menambahkan event listener untuk mendeteksi klik pada tombol navbar-toggler
+  document.addEventListener('DOMContentLoaded', function() {
+    const navbarToggler = document.querySelector('.navbar-toggler');
+    const navbarCollapse = document.querySelector('#navbarNav');
+
+    // Toggle class "show" untuk elemen collapse saat tombol navbar-toggler diklik
+    navbarToggler.addEventListener('click', function() {
+      navbarCollapse.classList.toggle('show');
+    });
+  });
+</script>
+
+
 </body>
 </html>
